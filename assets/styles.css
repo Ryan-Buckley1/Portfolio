@@ -1,0 +1,44 @@
+header {
+    padding: 20px 35 px;
+    background-color: #0300cf;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+
+
+}
+
+header h1 a {
+    font-weight: bold;
+    font-size: 25px;
+    color: orange;
+    margin: 8px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header nav {
+    margin: 7px 0;
+}
+header a {
+    text-decoration: none;
+    color: #99681f
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    border-radius: 15px;
+    text-shadow: none;
+}
