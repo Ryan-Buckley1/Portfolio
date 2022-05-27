@@ -1,47 +1,52 @@
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 67%, rgba(0,212,255,1) 100%);
+}
 header {
-    padding: 20px 35 px;
-    background-color: #0300cf;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #0300cf;
     border-radius: 15px;
-
-
+    min-height: 15vh;
+    border: 5px solid black;
 }
 
-header h1 a {
+header h1 {
+    /* padding: 50px 0 0 0 ; */
+    font-style:oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 50px;
     color: orange;
-    margin: 8px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
 }
-header nav {
-    margin: 7px 0;
-}
-header a {
+header h1 a {
     text-decoration: none;
-    color: #99681f
+    color: orange;
 }
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     list-style: none;
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 5px 15px;
+    margin:5px;
+    line-height: 2;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 20px;
+    color:blue;
+    background-color: black;
+    border-radius: 15px 5px;
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
-    border-radius: 15px;
+    border-radius: 5px 15px;
     text-shadow: none;
 }
 footer {
@@ -51,35 +56,66 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     color: #0300cf;
-    background-color: aquamarine;
+    border:5px solid blue;
     border-radius: 15px;
+    background: black;
 }
 footer h4 {
-    color: rgb(16, 27, 182);
+    color: orange;
+}
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+footer nav ul li a {
+    padding: 5px 15px;
+    margin:5px;
+    line-height: 2;
+    font-weight: lighter;
+    font-size: 20px;
+    color:black;
+    background-color: blue;
+    border-radius: 15px 5px;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    border-radius: 5px 15px;
+    text-shadow: none;
 }
 main {
     display: flex;
-    border: 10px solid orangered;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    justify-content: center;
+    border-radius: 15px;
 }
 .biography {
-    align-content: left;
+    /* align-content: left; */
     border: 10px solid purple;
-    height: 100vh;
-    justify-content: left;
+    /* height: 50vh; */
+    /* justify-content: left; */
     width:40vh;
 }
 .projects {
+    display: flex;
+    flex-wrap: wrap;
     align-content: right;
-    border: 10px solid black;
+    flex: 1 3;
+    border: 10px solid blue;
+    border-radius: 15px;
     flex-direction: column;
     padding: 10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: black;
 
 }
 .projects div {
-    border: 10px solid green;
+    border: 10px solid black;
     padding: 10px;
     border-radius: 15px;
 }
@@ -87,15 +123,131 @@ main {
     display: flex;
     background-image: url(./images/Run-buddy-screenshot.png);
     background-size:cover;
-    background-position: center;
+    background-position: left;
     background-attachment:inherit;
-    width: 50vh;
     height: 35vh;
     align-items: flex-start;
     flex-direction: column-reverse;
+    opacity: 50%;
+}
+.project1:hover {
+    opacity: 100%;
+    border: 10px solid blue;
 }
 .project1 aside{
     background-color: #0300cf;
     color:white;
-    border-radius: 15px;
+    border-radius: 15px 5px;
+}
+.project1 aside p {
+    margin: 10px;
+}
+.project1 aside h4 {
+    margin: 5px;
+}
+.project1 aside h4 a {
+    text-decoration: none;
+    color: #fff;
+}
+.project1 aside h4 a:hover {
+    opacity: 100%;
+}
+.project2 {
+    display: flex;
+    background-image: url(./images/Run-buddy-screenshot.png);
+    background-size:cover;
+    background-position: left;
+    background-attachment:inherit;
+    height: 35vh;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    opacity: 50%;
+}
+.project2:hover {
+    opacity: 100%;
+    border: 10px solid blue;
+}
+.project2 aside{
+    background-color: #0300cf;
+    color:white;
+    border-radius: 15px 5px;
+}
+.project2 aside p {
+    margin: 10px;
+}
+.project2 aside h4 {
+    margin: 5px;
+}
+.project2 aside h4 a {
+    text-decoration: none;
+    color: #fff;
+}
+.project2 aside h4 a:hover {
+    opacity: 100%;
+}
+.project3 {
+    display: flex;
+    background-image: url(./images/Run-buddy-screenshot.png);
+    background-size:cover;
+    background-position: left;
+    background-attachment:inherit;
+    height: 35vh;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    opacity: 50%;
+}
+.project3:hover {
+    opacity: 100%;
+    border: 10px solid blue;
+}
+.project3 aside{
+    background-color: #0300cf;
+    color:white;
+    border-radius: 15px 5px;
+}
+.project3 aside p {
+    margin: 10px;
+}
+.project3 aside h4 {
+    margin: 5px;
+}
+.project3 aside h4 a {
+    text-decoration: none;
+    color: #fff;
+}
+.project3 aside h4 a:hover {
+    opacity: 100%;
+}
+.project4 {
+    display: flex;
+    background-image: url(./images/Run-buddy-screenshot.png);
+    background-size:cover;
+    background-position: left;
+    background-attachment:inherit;
+    height: 35vh;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    opacity: 50%;
+}
+.project4:hover {
+    opacity: 100%;
+    border: 10px solid blue;
+}
+.project4 aside{
+    background-color: #0300cf;
+    color:white;
+    border-radius: 15px 5px;
+}
+.project4 aside p {
+    margin: 10px;
+}
+.project4 aside h4 {
+    margin: 5px;
+}
+.project4 aside h4 a {
+    text-decoration: none;
+    color: #fff;
+}
+.project4 aside h4 a:hover {
+    opacity: 100%;
 }
