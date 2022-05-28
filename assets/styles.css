@@ -88,31 +88,56 @@ footer nav ul li a:hover {
 }
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: 10px solid black;
-    justify-content: center;
+    justify-content:center;
     border-radius: 15px;
+    /* align-items: center; */
 }
 .biography {
-    /* align-content: left; */
-    border: 10px solid purple;
-    /* height: 50vh; */
-    /* justify-content: left; */
-    width:40vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 10px solid blue;
+    border-radius: 15px;
+    justify-content: center;
+    width: 30vw;
+}
+.biography h2 {
+    color: orange;
+    text-align: center;
+}
+.biography p {
+    color:white;
+    font-size: 15px;
+}
+.biography p:hover {
+    font-size: 20px;
+}
+.biography img {
+    opacity: 65%;
+    border: 3px solid black;
+    background: #fff;
+}
+.biography img:hover {
+    opacity: 100%;
 }
 .projects {
     display: flex;
-    flex-wrap: wrap;
-    align-content: right;
-    flex: 1 3;
+    flex-wrap:wrap;
+    flex: 1 3 100%;
     border: 10px solid blue;
     border-radius: 15px;
     flex-direction: column;
     padding: 10px;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: black;
-
+    background-color: transparent;
+}
+.projects h2 {
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+    order: -2;
 }
 .projects div {
     border: 10px solid black;
@@ -125,11 +150,12 @@ main {
     background-size:cover;
     background-position: left;
     background-attachment:inherit;
-    background-position: top;
-    height: 200px;
+    /* background-position: top; */
+    height: 40vh;
     align-items: flex-start;
     flex-direction: column-reverse;
     opacity: 50%;
+    order: -1;
 }
 .project1:hover {
     opacity: 100%;
@@ -159,8 +185,9 @@ main {
     background-size:cover;
     background-position: left;
     background-attachment:inherit;
-    background-position: top;
-    min-height: 200px;
+    /* background-position: top; */
+    min-height: 15vh;
+    /* max-width: 100px; */
     align-items: flex-start;
     flex-direction: column-reverse;
     opacity: 50%;
@@ -168,6 +195,8 @@ main {
 .project2:hover {
     opacity: 100%;
     border: 10px solid blue;
+    min-height: 40vh;
+    /* max-width:200px; */
 }
 .project2 aside{
     background-color: #0300cf;
@@ -193,8 +222,9 @@ main {
     background-size:cover;
     background-position: left;
     background-attachment:inherit;
-    background-position: top;
-    height: 200px;
+    /* background-position: top; */
+    min-height: 15vh;
+    /* max-width: 100px;   */
     align-items: flex-start;
     flex-direction: column-reverse;
     opacity: 50%;
@@ -202,6 +232,8 @@ main {
 .project3:hover {
     opacity: 100%;
     border: 10px solid blue;
+    height: 40vh;
+    /* max-width: 200px; */
 }
 .project3 aside{
     background-color: #0300cf;
@@ -228,7 +260,8 @@ main {
     background-position: left;
     background-attachment:inherit;
     background-position: top;
-    height: 200px;
+    height: 15vh;
+    /* max-width:100px; */
     align-items: flex-start;
     flex-direction: column-reverse;
     opacity: 50%;
@@ -236,6 +269,8 @@ main {
 .project4:hover {
     opacity: 100%;
     border: 10px solid blue;
+    height: 40vh;
+    /* max-width: 200px; */
 }
 .project4 aside{
     background-color: #0300cf;
@@ -254,4 +289,15 @@ main {
 }
 .project4 aside h4 a:hover {
     opacity: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .projects h2 {
+        font-size: 30px;
+    }
+
+    .project1 {
+        background-size: 250%;
+        background-position: top;
+    }
 }
