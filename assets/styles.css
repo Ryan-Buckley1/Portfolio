@@ -1,3 +1,6 @@
+:root {
+    --primary-blue: rgba(2, 2, 163, 0.63);
+}
 body {
     background: rgb(2,0,36);
 background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 67%, rgba(0,212,255,1) 100%);
@@ -56,7 +59,7 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     color: #0300cf;
-    border:5px solid blue;
+    border:5px solid var(--primary-blue);
     border-radius: 15px;
     background: black;
 }
@@ -98,7 +101,7 @@ main {
     display: flex;
     flex-direction: column;
     align-content: center;
-    border: 10px solid blue;
+    border: 10px solid var(--primary-blue);
     border-radius: 15px;
     justify-content: center;
     width: 30vw;
@@ -127,7 +130,7 @@ main {
     display: flex;
     flex-wrap:wrap;
     flex: 1 3 100%;
-    border: 10px solid blue;
+    border: 10px solid var(--primary-blue);
     border-radius: 15px;
     flex-direction: column;
     padding: 10px;
@@ -160,7 +163,7 @@ main {
 }
 .project1 a:hover {
     opacity: 100%;
-    border: 10px solid blue;
+    border: 10px solid var(--primary-blue);
 }
 .project1 aside{
     margin: 2px;
@@ -193,7 +196,7 @@ main {
 }
 .project2 a:hover {
     opacity: 100%;
-    border: 10px solid blue;
+    border: 10px solid var(--primary-blue);
     min-height: 40vh;
 }
 .project2 aside{
@@ -230,7 +233,7 @@ main {
 }
 .project3 a:hover {
     opacity: 100%;
-    border: 10px solid blue;
+    border: 10px solid var(--primary-blue);
     height: 40vh;
 }
 .project3 aside{
@@ -269,7 +272,7 @@ main {
 }
 .project4 a:hover {
     opacity: 100%;
-    border: 10px solid blue;
+    border: 10px solid var(--primary-blue);
     height: 40vh;
 }
 .project4 aside{
