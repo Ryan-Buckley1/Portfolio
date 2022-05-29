@@ -5,6 +5,7 @@ body {
     background: rgb(2,0,36);
 background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 67%, rgba(0,212,255,1) 100%);
 }
+/* BEGIN HEADER  */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +21,6 @@ header {
 header h1 {
     font-style:oblique;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
     font-size: 50px;
     color: orange;
     text-shadow: 1px 1px 2px black;
@@ -52,13 +52,14 @@ header nav ul li a:hover {
     border-radius: 5px 15px;
     text-shadow: none;
 }
+/* END HEADER  */
+/* BEGIN FOOTER  */
 footer {
     padding:0 5% 0 5%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
-    color: #0300cf;
     border:5px solid var(--primary-blue);
     border-radius: 15px;
     background: black;
@@ -90,6 +91,12 @@ footer nav ul li a:hover {
     border-radius: 5px 15px;
     text-shadow: none;
 }
+/* END FOOTER  */
+.hero {
+    color: orange;
+    text-align: end;
+}
+
 main {
     display: flex;
     flex-wrap: nowrap;
@@ -97,6 +104,8 @@ main {
     justify-content:center;
     border-radius: 15px;
 }
+
+/* START BIOGRAPHY SECTION  */
 .biography {
     display: flex;
     flex-direction: column;
@@ -126,6 +135,8 @@ main {
 .biography img:hover {
     opacity: 100%;
 }
+/* END BIOGRAPHY  */
+/* PROJECTS SECTION  */
 .projects {
     display: flex;
     flex-wrap:wrap;
@@ -147,6 +158,7 @@ main {
 .projects div {
     border-radius: 15px;
 }
+/* SPOTLIGHT PROJECT  */
 .project1 a {
     display: flex;
     background-image: url(./images/Run-buddy-screenshot.png);
@@ -181,6 +193,8 @@ main {
 .project1 aside h4 a:hover {
     opacity: 100%;
 }
+/* END SPOTLIGHT PROJECT  */
+/* START SECONDARY PROJECTS  */
 .project2 a {
     display: flex;
     background-image: url(./images/Fedex-truck.webp);
@@ -294,6 +308,7 @@ main {
 .project4 aside h4 a:hover {
     opacity: 100%;
 }
+/* END SPOTLIGHT PROJECTS  */
 
 @media screen and (max-width: 500px) {
     .projects h2 {
@@ -303,5 +318,8 @@ main {
     .project1 {
         background-size: 250%;
         background-position: top;
+    }
+    .hero{
+        text-align: center;
     }
 }
