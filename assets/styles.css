@@ -161,7 +161,7 @@ main {
 /* SPOTLIGHT PROJECT  */
 .project1 a {
     display: flex;
-    background-image: url(./images/Screenshot\ 2022-07-07\ 185952.png);
+    background-image: url(./images/boardgametracker.png);
     background-size:cover;
     background-position: left;
     background-attachment:inherit;
@@ -197,7 +197,7 @@ main {
 /* START SECONDARY PROJECTS  */
 .project2 a {
     display: flex;
-    background-image: url(./images/Run-buddy-screenshot.png);
+    background-image: url(./images/Screenshot\ 2022-07-07\ 185952.png);
     background-size:cover;
     background-position: left;
     background-attachment:inherit;
@@ -234,7 +234,7 @@ main {
 }
 .project3 a {
     display: flex;
-    background-image: url(./images/packages.jpg);
+    background-image: url(./images/Run-buddy-screenshot.png);
     background-size:cover;
     background-position: left;
     background-attachment:inherit;
